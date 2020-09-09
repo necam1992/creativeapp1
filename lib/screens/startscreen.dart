@@ -9,109 +9,105 @@ class StartScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red[900],
-        title: Text('Student Catalog'),
+        title: Text('Computer Science Courses'),
       ),
       body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(8.0, 10, 10, 13),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 6.0),
+          child: Wrap(
+            children: [
+              Column(
                 children: <Widget>[
-                  Expanded(
-                    child: FlatButton(
-                        padding: EdgeInsets.all(15),
-                        color: Colors.red[900],
-                        onPressed: () {},
-                        child: Text(
-                          'DMS',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  ),
-                  Expanded(
-                    child: FlatButton(
-                        padding: EdgeInsets.all(7),
-                        color: Colors.yellow[900],
-                        onPressed: () {},
-                        child: Text('Software Engineering',
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(15),
+                          color: Colors.red[900],
+                          onPressed: () {},
+                          child: Text(
+                            'Database Management System',
                             textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white))),
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ),
                   ),
-                  Expanded(
-                    child: FlatButton(
-                        padding: EdgeInsets.all(7),
-                        color: Colors.green[500],
-                        onPressed: () {},
-                        child: Text('Mobile Application',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white))),
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(7),
+                          color: Colors.yellow[900],
+                          onPressed: () {},
+                          child: Text('Software Engineering',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white))),
+                    ),
+                  ),
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(7),
+                          color: Colors.green[500],
+                          onPressed: () {},
+                          child: Text('Mobile Application',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white))),
+                    ),
                   )
                 ],
               ),
-            ),
-            Divider(
-              height: 1.0,
-              color: Colors.black,
-              thickness: 1,
-              indent: 20,
-              endIndent: 20,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Container(
-                  child: RaisedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.library_books,
-                        color: Colors.green[900],
-                      ),
-                      label: Text(
-                        'CS Courses',
-                        style: TextStyle(color: Colors.green[900]),
-                      )),
-                ),
-                Container(
-                  child: RaisedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.library_books,
-                        color: Colors.green[900],
-                      ),
-                      label: Text(
-                        'CS Courses',
-                        style: TextStyle(color: Colors.green[900]),
-                      )),
-                ),
-                Container(
-                  child: RaisedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.library_books,
-                        color: Colors.green[900],
-                      ),
-                      label: Text(
-                        'CS Courses',
-                        style: TextStyle(color: Colors.green[900]),
-                      )),
-                ),
-                Container(
-                  child: RaisedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.library_books,
-                        color: Colors.green[900],
-                      ),
-                      label: Text(
-                        'CS Courses',
-                        style: TextStyle(color: Colors.green[900]),
-                      )),
-                ),
-              ],
-            )
-          ],
+              Column(
+                children: <Widget>[
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(15),
+                          color: Colors.red[900],
+                          onPressed: () {},
+                          child: Text(
+                            'Data Structure and Algorithms',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ),
+                  ),
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(7),
+                          color: Colors.yellow[900],
+                          onPressed: () {},
+                          child: Text('Machine Learning',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white))),
+                    ),
+                  ),
+                  Container(
+                    width: 200,
+                    height: 200,
+                    child: Card(
+                      child: FlatButton(
+                          padding: EdgeInsets.all(7),
+                          color: Colors.green[500],
+                          onPressed: () {},
+                          child: Text('Computer and Network Security',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white))),
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

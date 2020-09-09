@@ -1,5 +1,5 @@
 import 'package:creativework1/screens/startscreen.dart';
-import 'package:creativework1/screens/viewcourses.dart';
+import 'package:creativework1/screens/dbms.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class CreativeWork1 extends StatelessWidget {
       initialRoute: StartScreen.routeName,
       routes: {
         StartScreen.routeName: (BuildContext context) => StartScreen(),
-        ViewCourses.routeName: (context) => ViewCourses(),
+        DBMS.routeName: (context) => DBMS(),
       },
     );
   }
