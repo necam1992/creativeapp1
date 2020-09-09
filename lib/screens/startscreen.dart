@@ -1,3 +1,9 @@
+import 'package:creativework1/screens/cns.dart';
+import 'package:creativework1/screens/dbms.dart';
+import 'package:creativework1/screens/dsa.dart';
+import 'package:creativework1/screens/ml.dart';
+import 'package:creativework1/screens/mobileapp.dart';
+import 'package:creativework1/screens/swe.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -24,8 +30,9 @@ class StartScreen extends StatelessWidget {
                     child: Card(
                       child: FlatButton(
                           padding: EdgeInsets.all(15),
-                          color: Colors.red[900],
-                          onPressed: () {},
+                          color: Colors.blue[900],
+                          onPressed: () =>
+                              Navigator.pushNamed(context, DBMS.routeName),
                           child: Text(
                             'Database Management System',
                             textAlign: TextAlign.center,
@@ -40,7 +47,8 @@ class StartScreen extends StatelessWidget {
                       child: FlatButton(
                           padding: EdgeInsets.all(7),
                           color: Colors.yellow[900],
-                          onPressed: () {},
+                          onPressed: () =>
+                              Navigator.pushNamed(context, SWE.routeName),
                           child: Text('Software Engineering',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white))),
@@ -53,7 +61,8 @@ class StartScreen extends StatelessWidget {
                       child: FlatButton(
                           padding: EdgeInsets.all(7),
                           color: Colors.green[500],
-                          onPressed: () {},
+                          onPressed: () =>
+                              Navigator.pushNamed(context, MobileApp.routeName),
                           child: Text('Mobile Application',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white))),
@@ -69,8 +78,9 @@ class StartScreen extends StatelessWidget {
                     child: Card(
                       child: FlatButton(
                           padding: EdgeInsets.all(15),
-                          color: Colors.red[900],
-                          onPressed: () {},
+                          color: Colors.blue[900],
+                          onPressed: () =>
+                              Navigator.pushNamed(context, DSA.routeName),
                           child: Text(
                             'Data Structure and Algorithms',
                             textAlign: TextAlign.center,
@@ -85,7 +95,8 @@ class StartScreen extends StatelessWidget {
                       child: FlatButton(
                           padding: EdgeInsets.all(7),
                           color: Colors.yellow[900],
-                          onPressed: () {},
+                          onPressed: () =>
+                              Navigator.pushNamed(context, ML.routeName),
                           child: Text('Machine Learning',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white))),
@@ -98,7 +109,8 @@ class StartScreen extends StatelessWidget {
                       child: FlatButton(
                           padding: EdgeInsets.all(7),
                           color: Colors.green[500],
-                          onPressed: () {},
+                          onPressed: () =>
+                              Navigator.pushNamed(context, CNS.routeName),
                           child: Text('Computer and Network Security',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white))),

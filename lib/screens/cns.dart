@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DBMS extends StatelessWidget {
-  static const routeName = '/viewCourses';
+class CNS extends StatelessWidget {
+  static const routeName = '/cns';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[900],
-        title: Text('Recommended Textbooks'),
+        backgroundColor: Colors.green[900],
+        title: Text('Recommended TextBooks'),
       ),
     );
   }
