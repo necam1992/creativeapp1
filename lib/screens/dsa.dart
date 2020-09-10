@@ -10,6 +10,17 @@ class DSA extends StatelessWidget {
         backgroundColor: Colors.blue[900],
         title: Text('Recommended Textbooks'),
       ),
+      body: SafeArea(
+          child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Image.asset('images/DSA.png'),
+            ),
+          )
+        ],
+      )),
     );
   }
 }

@@ -10,6 +10,14 @@ class MobileApp extends StatelessWidget {
         backgroundColor: Colors.green[900],
         title: Text('Recommended TextBooks'),
       ),
+      body: SafeArea(
+          child: Column(
+        children: <Widget>[
+          Container(
+            child: Image.asset('images/mobileapp.png'),
+          )
+        ],
+      )),
     );
   }
 }
