@@ -12,18 +12,90 @@ class DBMS extends StatelessWidget {
       ),
       body: SafeArea(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Container(
-              child: Image.asset('images/dbms.jpg', width: 500, height: 150),
-            ),
-          ),
-          Divider(
-            color: Colors.blue,
-            thickness: 2,
-            indent: 30,
-            endIndent: 30,
+          Wrap(
+            children: [
+              Column(
+                children: <Widget>[
+                  Container(
+                    child: Image.asset('images/dbms.jpg'),
+                  ),
+                  Divider(
+                    thickness: 2,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book2.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book1.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book1.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Image.asset(
+                          'images/database_book2.jpg',
+                          width: 120,
+                          height: 120,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       )),
